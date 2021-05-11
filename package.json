@@ -1,0 +1,29 @@
+{
+  "name": "iot-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "ruofeng",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo just test it",
+    "start": "nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node -P --log-error --files ./src/index.ts"
+  },
+  "dependencies": {
+    "@koa/router": "^8.0.8",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-session": "^6.0.0",
+    "koa2-cors": "^2.0.6",
+    "typescript-rest": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.11.3",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa2-cors": "^2.0.1",
+    "@types/koa__router": "^8.0.2",
+    "module-alias": "^2.2.2",
+    "nodemon": "^2.0.3",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.8.3"
+  }
+}
