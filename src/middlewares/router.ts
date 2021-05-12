@@ -9,7 +9,6 @@ const router = new Router()
 export const response = (type: THttpType, url: string, controller: TController) => {
   router[type](url, async (ctx: Context, ...arg: any) => {
     try {
-      console.log('arg', arg)
       const data = await controller(ctx)
       ctx.status = 200
       ctx.body = {

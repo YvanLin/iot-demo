@@ -1,5 +1,3 @@
-  
-import 'module-alias/register'
 import * as Koa from 'koa'
 import { koaMiddleware } from './middlewares'
 import { router } from './middlewares/router'
