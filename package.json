@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "test": "echo just test it",
+    "build": "tsc",
     "start": "nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node -P --log-error --files ./src/index.ts"
   },
   "dependencies": {
